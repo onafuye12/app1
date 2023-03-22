@@ -1,0 +1,116 @@
+USER@DESKTOP-6NBTLT4 MINGW64 ~/Documents
+$ cd
+
+USER@DESKTOP-6NBTLT4 MINGW64 ~
+$ cd
+
+USER@DESKTOP-6NBTLT4 MINGW64 ~
+$ cd Desktop
+
+USER@DESKTOP-6NBTLT4 MINGW64 ~/Desktop
+$ mkdir datalab
+
+USER@DESKTOP-6NBTLT4 MINGW64 ~/Desktop
+$ cd datalab
+
+USER@DESKTOP-6NBTLT4 MINGW64 ~/Desktop/datalab
+$ cd Desktop datalab
+bash: cd: too many arguments
+
+USER@DESKTOP-6NBTLT4 MINGW64 ~/Desktop/datalab
+$ cd Desktop badmus
+bash: cd: too many arguments
+
+USER@DESKTOP-6NBTLT4 MINGW64 ~/Desktop/datalab
+$ touch data.xlsx
+
+USER@DESKTOP-6NBTLT4 MINGW64 ~/Desktop/datalab
+$ touch names.txt
+
+USER@DESKTOP-6NBTLT4 MINGW64 ~/Desktop/datalab
+$ mkdir app1
+
+USER@DESKTOP-6NBTLT4 MINGW64 ~/Desktop/datalab
+$ rm -r app1
+
+USER@DESKTOP-6NBTLT4 MINGW64 ~/Desktop/datalab
+$ rm data.xlsx
+
+USER@DESKTOP-6NBTLT4 MINGW64 ~/Desktop/datalab
+$ mkdir app1
+
+USER@DESKTOP-6NBTLT4 MINGW64 ~/Desktop/datalab
+$ cd app1
+
+USER@DESKTOP-6NBTLT4 MINGW64 ~/Desktop/datalab/app1
+$ touch people.txt
+
+USER@DESKTOP-6NBTLT4 MINGW64 ~/Desktop/datalab/app1
+$ git init
+Initialized empty Git repository in C:/Users/USER/Desktop/datalab/app1/.git/
+
+USER@DESKTOP-6NBTLT4 MINGW64 ~/Desktop/datalab/app1 (master)
+$ git add .
+
+USER@DESKTOP-6NBTLT4 MINGW64 ~/Desktop/datalab/app1 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   people.txt
+
+
+USER@DESKTOP-6NBTLT4 MINGW64 ~/Desktop/datalab/app1 (master)
+$ git commit -m "created people.txt file"
+[master (root-commit) 0c4b282] created people.txt file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 people.txt
+
+USER@DESKTOP-6NBTLT4 MINGW64 ~/Desktop/datalab/app1 (master)
+$ git branch B1
+
+USER@DESKTOP-6NBTLT4 MINGW64 ~/Desktop/datalab/app1 (master)
+$ git checkout B1
+Switched to branch 'B1'
+
+USER@DESKTOP-6NBTLT4 MINGW64 ~/Desktop/datalab/app1 (B1)
+$ touch names.txt
+
+USER@DESKTOP-6NBTLT4 MINGW64 ~/Desktop/datalab/app1 (B1)
+$ git status
+On branch B1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        names.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+USER@DESKTOP-6NBTLT4 MINGW64 ~/Desktop/datalab/app1 (B1)
+$ git add .
+
+USER@DESKTOP-6NBTLT4 MINGW64 ~/Desktop/datalab/app1 (B1)
+$ git status
+On branch B1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   names.txt
+
+
+USER@DESKTOP-6NBTLT4 MINGW64 ~/Desktop/datalab/app1 (B1)
+$ git commit -m "added new file "
+[B1 9243dc0] added new file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 names.txt
+
+USER@DESKTOP-6NBTLT4 MINGW64 ~/Desktop/datalab/app1 (B1)
+$ git checkout master
+Switched to branch 'master'
+
+USER@DESKTOP-6NBTLT4 MINGW64 ~/Desktop/datalab/app1 (master)
+$ git config --global user.name "onafuye12"
+
+USER@DESKTOP-6NBTLT4 MINGW64 ~/Desktop/datalab/app1 (master)
+$ git config --global user.email "pelumionafuye@gmail.com"
